@@ -1,0 +1,18 @@
+#lang racket
+
+(define (find-bigrams str index lst)
+  (cond 
+    [(= (string-length str) index) lst]
+    [else (find-bigrams str (add1 index) (append lst (substring str index add1(index))))]
+  )
+)
+
+(define (dices-coefficient str1 str2)
+  (define str1-bigrams (find-bigrams str1 0 (list #())))
+  (define str2-bigrams (find-bigrams str2 0 (list #())))
+)
+
+(define str1 "COMPLEMENT")
+(define str2 "COMPLIMENT")
+
+(dices-coefficient str1 str2)

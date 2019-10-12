@@ -17,8 +17,8 @@ As funções que calculam a similaridade retornam:
 
 Para a comparação dos textos, foram utilizados dois métodos de comparação: 
 
-1. **Decidir**
-2. **Decidir**
+1. **Dice's Coefficient**
+2. **Longest Common SubString**
 
 Mais informações sobre os métodos de comparação:
 [A Survey of Text Similarity Approaches](https://pdfs.semanticscholar.org/5b5c/a878c534aee3882a038ef9e82f46e102131b.pdf)
