@@ -14,4 +14,4 @@
   (list str1-bigrams str2-bigrams)
 )
 
-(provide dices-coefficient)
+(provide dices-coefficient find-bigrams)
