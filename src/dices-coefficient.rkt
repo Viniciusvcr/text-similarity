@@ -28,9 +28,9 @@
 
   (define len-str1-bigrams (length str1-bigrams))
   (define len-str2-bigrams (length str2-bigrams))
-  (define coefficient (/ (* 2 2) (+ len-str1-bigrams len-str2-bigrams)))
+  (define coefficient (/ (* 2 (count-equals str1-bigrams str2-bigrams)) (+ len-str1-bigrams len-str2-bigrams)))
 
-  (list str1-bigrams str2-bigrams)
+  (exact->inexact coefficient)
 )
 
 (provide dices-coefficient find-bigrams count-equals)

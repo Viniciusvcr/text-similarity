@@ -63,5 +63,34 @@
   )
 )
 
+(define dices-coefficient-test
+  (test-suite "dices-coefficient-test"
+    (test-case "COMPLEMENT-COMPLIMENT"
+      (check-equal? (dices-coefficient "COMPLEMENT" "COMPLIMENT") 0.7777777777777778)
+    )
+
+    (test-case "BAZAAR-BIZARRE"
+      (check-equal? (dices-coefficient "BAZAAR" "BIZARRE") 0.36363636363636365)
+    )
+
+    (test-case "ALGORITHMS ARE FUN-LOGARITHMS ARE NOT"
+      (check-equal? (dices-coefficient "ALGORITHMS ARE FUN" "LOGARITHMS ARE NOT") 0.5882352941176471)
+    )
+
+    (test-case "ASSISTANCE-ASSISTANTS"
+      (check-equal? (dices-coefficient "ASSISTANCE" "ASSISTANTS") 0.7777777777777778)
+    )
+    
+    (test-case "ASSISTANCE-ASSISTANCE"
+      (check-equal? (dices-coefficient "ASSISTANCE" "ASSISTANCE") 1.0)
+    )
+    
+    (test-case "COMPLIMENT-BIZARRE"
+      (check-equal? (dices-coefficient "COMPLIMENT" "BIZARRE") 0.0)
+    )
+  )
+)
+
 (run-tests find-bigrams-test)
 (run-tests count-equals-test)
+(run-tests dices-coefficient-test)
