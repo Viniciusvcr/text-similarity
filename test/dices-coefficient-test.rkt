@@ -60,6 +60,13 @@
 
       (check-equal? (count-equals bigrams1 bigrams2) 9)
     )
+    
+    (test-case "COMPLIMENT-BIZARRE"
+      (define bigrams1 (find-bigrams "COMPLIMENT" 0 (list)))
+      (define bigrams2 (find-bigrams "BIZARRE" 0 (list)))
+
+      (check-equal? (count-equals bigrams1 bigrams2) 0)
+    )
   )
 )
 
