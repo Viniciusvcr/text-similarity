@@ -1,0 +1,2 @@
+A computação pode ser definida como a busca de uma solução para um problema a partir de entradas e tem seus resultados depois de trabalhada através de um algoritmo. É com isto que lida a teoria da computação, subcampo da ciência da computação e da matemática.
+A psicologia é a ciência que trata dos estados e processos mentais, do comportamento do ser humano e de suas interações com um ambiente físico e social.
