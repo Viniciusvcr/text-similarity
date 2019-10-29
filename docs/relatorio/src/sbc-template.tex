@@ -103,11 +103,26 @@ Textos 4/8 & 0,59 & 0,78 & \multicolumn{1}{c|}{0,50} \\ \hline
 
 Analisando a tabela \ref{tab:resultados}, é possível observar que a maior correlação com o padrão-ouro é do método \textit{Longest Common Substring}. Isso se deve ao fato de que seu concorrente, \textit{Dice's Coefficient}, procura por bigramas correspondentes, o que o faz enaltecer padrões nos textos, fato comprovado pelo resultado muito próximo de 1 do par de textos 3-7, enquanto ele, LCS, funciona melhor para sistemas de revisão de controle, como por exemplo git, por conseguir quantificar o número de alterações nos textos.
 
+Além da correlação com o padrão-ouro, é importante verificarmos o tempo de execução dos algoritmos. A figura \ref{fig:exec-time} contém tais dados:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.65]{exec-time.png}
+    \caption{Tempo de execução dos algoritmos para cada par de texto}
+    \label{fig:exec-time}
+\end{figure}
+
+É possível enxergar os grandes \textit{outliers} existentes no cálculo do coeficiente pelo método LCS par de textos 3-7, e pelo método \textit{Dice's Coefficient} no par 1-5. Com isso, a média do tempo de execução dos algoritmos foi $2,58 s$ e $4,90 s$ para o método \textit{Dice's} e LCS, respectivamente. Com o resultado, é certo afirmar que, no quesito tempo de execução, o algoritmo \textit{Dice's Coefficient} se mostra vantajoso para um caso médio. 
+
+Essa vantagem no tempo de execução pode ser explicada pela técnica usada na construção do algoritmo, que é baseada em termos e, como o próprio nome já diz, baseia-se em conjuntos de caracteres, de tamanho dois, nesse caso, para fazer suas computações, o que acaba diminuindo a quantidade de comparações necessárias no melhor e médio casos. 
+
+O pior caso do algoritmo de Dice está no caso em que todos os bigramas são iguais, o que pode ser visto no teste do par 1-5, explicando seu resultado acima da média.
+
 \section{Conclusão}
 
 O desenvolvimento do presente trabalho possibilitou um melhor entendimento de dois métodos de verificação de similaridades em textos, área crescente tanto no contexto acadêmico, quanto empresarial.
 
-Como discutido na seção \ref{sec:avaliacao}, avaliação e discussão, o algoritmo \textit{Longest Common Substring} se mostrou mais acurado na verificação de similaridade de textos levando em consideração o padrão-ouro. Isso mostra que a técnica de comparação por caracteres consegue captar contexto, ainda que de modo sutil.
+Como discutido na seção \ref{sec:avaliacao}, ``avaliação e discussão", o algoritmo \textit{Longest Common Substring} se mostrou mais acurado na verificação de similaridade de textos levando em consideração a metodologia deste estudo. Isso mostra que a técnica de comparação por caracteres consegue captar contexto, ainda que de modo sutil.
 
 Não podemos, todavia, descartar a importância do outro método abordado no trabalho, \textit{Dice's Coefficient}. Sua técnica de comparação por termos se mostra muito útil em situações que se pretende valorar similaridades léxicas ou encontrar padrões, como no campo genético da biologia.
 
