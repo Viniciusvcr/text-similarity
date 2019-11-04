@@ -23,8 +23,6 @@ Para a comparação dos textos, foram utilizados dois métodos de comparação:
 Mais informações sobre os métodos de comparação:
 [A Survey of Text Similarity Approaches](https://pdfs.semanticscholar.org/5b5c/a878c534aee3882a038ef9e82f46e102131b.pdf)
 
-## Execução
-
 ## Referências
 
 - http://www.algomation.com/algorithm/sorensen-dice-string-similarity
