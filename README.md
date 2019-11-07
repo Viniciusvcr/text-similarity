@@ -20,6 +20,8 @@ Para a comparação dos textos, foram utilizados dois métodos de comparação:
 1. **Dice's Coefficient**
 2. **Longest Common SubString**
 
+A implementação dos métodos foi modularizada e está disponível na pasta "src".
+
 Mais informações sobre os métodos de comparação:
 [A Survey of Text Similarity Approaches](https://pdfs.semanticscholar.org/5b5c/a878c534aee3882a038ef9e82f46e102131b.pdf)
 
