@@ -23,7 +23,8 @@ Para a comparação dos textos, foram utilizados dois métodos de comparação:
 Mais informações sobre os métodos de comparação:
 [A Survey of Text Similarity Approaches](https://pdfs.semanticscholar.org/5b5c/a878c534aee3882a038ef9e82f46e102131b.pdf)
 
-## Referências
+## Execução
 
-- http://www.algomation.com/algorithm/sorensen-dice-string-similarity
-- https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient
+- Para executar o programa principal, utilize ```racket src/main.rkt```
+- O programa suporta redirecionamento de entrada, para isso utilize ```racket src/main.rkt < texto```
+    - Os textos usados nos testes estão disponíveis em "docs/textos-testes"
